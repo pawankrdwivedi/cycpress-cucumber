@@ -1,0 +1,23 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Automation Framework for Cucumber and Cypress",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "test:chrome":"npx cypress run --headed --browser chrome",
+    "test:headlesschrome":"npx cypress run --headless --browser chrome"
+  },
+  "keywords": [],
+  "author": "Pawan Kumar Dwivedi",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "cypress": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "nonGlobalStepDefinitions": false
+  }
+}
