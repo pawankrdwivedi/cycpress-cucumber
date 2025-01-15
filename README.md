@@ -1,7 +1,7 @@
 # cycpress-cucumber
 
 ## 1. Install packages
-npm install @badeball/cypress-cucumber-preprocessor --save-dev
+npm install
  
 ## 2. Execute Feature File
 Script Execution with headless Electron: npm run test
