@@ -9,8 +9,9 @@ After(() => {
 })
 
 Given('Application Page is opened.', () => {
-    cy.visit('https://magento.softwaretestingboard.com/');
-  })
+  const testData = require('../../fixtures/testData.json')
+    cy.visit(testData.baseUrL);
+    })
 
 When('User click on Create New Account link.', () => {
     cy.get('a[href*="customer/account/create"]').first().click();
